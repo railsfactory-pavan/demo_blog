@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DemoBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>DemoBlog</title>
+    <%= csrf_meta_tags %>
 
-	<section class="hero is-primary is-medium">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<section class="hero is-primary is-medium">
 	  <!-- Hero head: will stick at the top -->
 	  <div class="hero-head">
 	    <nav class="navbar">
 	      <div class="container">
 	        <div class="navbar-brand">
-	          <%= link_to 'Demo Blog', root_path, class: "navbar-item" %>
+	          <%= link_to 'FriendS BloG', root_path, class: "navbar-item" %>
 	          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
 	            <span></span>
 	            <span></span>
@@ -23,7 +24,7 @@
 	        </div>
 	        <div id="navbarMenuHeroA" class="navbar-menu">
 	          <div class="navbar-end">
-	            <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+	            <%= link_to "New FriendS", new_post_path, class:"navbar-item" %>
 	          </div>
 	        </div>
 	      </div>
@@ -39,8 +40,6 @@
 	    </div>
 	  </div>
 	</section>
-
-<%= yield %>
-
-</body>
+    <%= yield %>
+  </body>
 </html>
