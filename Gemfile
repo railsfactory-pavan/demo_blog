@@ -42,7 +42,7 @@ gem 'simple_form', '~> 3.5'
 # Guard is a command line tool to easily handle events on file system modifications
 gem 'guard', '~> 2.15', '>= 2.15.1'
 # Guard::LiveReload automatically reloads your browser when 'view' files are modified
-gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
