@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,6 +32,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Make errors better looking
+gem 'better_errors', '~> 2.4'
+# A modern CSS framework based on Flexbox
+gem 'bulma-rails', '~> 0.7.5'
+# Forms made easy!
+gem 'simple_form', '~> 3.5'
+# Guard is a command line tool to easily handle events on file system modifications
+gem 'guard', '~> 2.15', '>= 2.15.1'
+# Guard::LiveReload automatically reloads your browser when 'view' files are modified
+gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
