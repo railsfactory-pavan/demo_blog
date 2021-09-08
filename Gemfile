@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 # Make errors better looking
-gem 'better_errors', '~> 2.4'
+gem 'better_errors', '~> 2.8'
 # A modern CSS framework based on Flexbox
 gem 'bulma-rails', '~> 0.7.5'
 # Forms made easy!
